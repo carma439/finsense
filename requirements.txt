@@ -1,0 +1,37 @@
+# orchestration
+langchain
+langchain-community
+langchain-huggingface
+langchain-groq
+sentence-transformers
+dotenv
+
+# vector-store
+langchain-chroma
+chromadb
+
+# reading content from PDFs
+pypdf
+
+# API
+fastapi
+uvicorn
+requests
+
+# tax calculation -> headless browsing
+playwright
+
+# UI
+streamlit
+
+# evaluating numerical expressions
+numexpr
+
+# cpu only torch
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+
+
+# apscheduler -> schedule code run (WIP)
+# beautifulsoup4 -> extracting content from webpages (WIP)
+# ragas -> RAG evaluation (WIP)
