@@ -28,8 +28,8 @@ This project was developed to explore core concepts in Generative AI and Agentic
 
 Please [visit here](https://finsense-ai.streamlit.app/) for a live demo of the project. 
 
-The frontend (UI) has been deployed on StreamlitCloud with the backend (API) on Render. 
-It uses a free GROQ API key, so please visit sometime later as API free usage might have been temporarily reached. Tax calculation queries are not working right now, as Playwright is not working properly with Render's free-tier resources. (*WIP)
+The frontend (UI) has been deployed on StreamlitCloud with the backend (API) on a HuggingFace space. 
+It uses a free GROQ API key, so please visit sometime later as API free usage might have been temporarily reached.
 
 ---
 
@@ -266,6 +266,7 @@ streamlit run app.py
 
 ## Future Improvements
 
+* Reduce hallucinations and implement RAG evaluation with RAGAS
 * Automated document updates for policy changes
 * Multi-chat support
 * Document versioning
