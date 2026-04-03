@@ -39,8 +39,7 @@ agent = create_agent(
         - Call rag_search once per question with a concise query and use the returned information to answer the question.
         - Do NOT use internet or your own information. Your answer must be solely based on the tools.
         
-        Use the information returned by tools to answer the question.
-        If the tools return no useful information, say you do not know.
+        IMPORTANT: Answer only using the provided context from tools. If the answer is not in the context, say 'I do not know'.
 
         For greetings, respond politely and explain briefly how you can help.
         """)

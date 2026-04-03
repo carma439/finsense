@@ -6,8 +6,43 @@ API_URL = "https://chirags439-finsense.hf.space/chat" # deployed url
 
 st.title("Financial AI Assistant")
 
+st.write("Hello! I am an agent that can help you with your financial queries and tax calculations.")
+
 if "messages" not in st.session_state:
     st.session_state.messages = []
+
+# Detect if this is first load (no messages yet)
+is_first = len(st.session_state.messages) == 0
+
+# Apply CSS conditionally
+if is_first:
+    st.markdown("""
+    <style>
+    div[data-testid="stChatInput"] {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        max-width: 700px;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+else:
+    st.markdown("""
+    <style>
+    div[data-testid="stChatInput"] {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        max-width: 700px;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+
 
 # display chat history
 for msg in st.session_state.messages:
