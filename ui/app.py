@@ -7,6 +7,8 @@ API_URL = "https://chirags439-finsense.hf.space/chat" # deployed url
 st.title("Financial AI Assistant")
 
 st.write("Hello! I am an agent that can help you with your financial queries and tax calculations.")
+st.write("If you get a JSON error, that might be because of free-tier limitations of HuggingFace Spaces, which is being used for backend.")
+st.write("Please reactivate the backend here: https://huggingface.co/spaces/chirags439/finsense and then try again! Thank you!")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
